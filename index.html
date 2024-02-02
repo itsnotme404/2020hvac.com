@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "EB Garamond", serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/front.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+  <p style="display:inline-block; font-size:200%; text-align:center;" >
+	<img style="vertical-align:center; padding-left: 5px;" src="images/companyLogo.jpg" width="80" height="42" float="left">
+    <b>HEATING & AIR, INC.</b>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+	  <a href="#team" class="w3-bar-item w3-button"> Home</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i>About Us</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-wrench" aria-hidden="true"></i> Services</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Products</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+    </div>
+	</p>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">About Us</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Products</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px; background-color: rgba(30, 143, 91, 0.75);" >
+    <span class="w3-jumbo w3-hide-small">Welcome to 2020 Heating & Air, Inc.</span><br>
+    <span class="w3-large">Your trusted partner in heating, air conditioning, and ventilation solutions. We pride ourselves on delivering top-notch HVAC services tailored to your needs. Whether you require installation, maintenance, or repairs, our team of skilled professionals is dedicated to ensuring your indoor comfort and energy efficiency. Contact us today to experience excellence in HVAC solutions.</span>
+  </div> 
+</header>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-padding-64" style="background-color:#000000;color:white;">
+  <h3 class="w3-center">Overview of Services</h3>
+  <p class="w3-center w3-large">Explore our comprehensive range of HVAC services designed to enhance your environment in our "Services" page:
+  <br>*Installation Services<br>*Maintenance and Tune-Ups
+  <br>*Repairs and Troubleshooting<br>*Duct Cleaning and Air Quality Services
+  <br>*Energy-Efficiency Upgrades<br>*Smart Thermostat Installation
+  <br>*Commercial HVAC Solutions </p>
+</div>
+  
+  <h3 class="w3-center">Service Area</h3>
+  <p class="w3-center w3-large">Hey neighbors! 2020 Heating & Air proudly serves the San Francisco bay area and beyond. Whether you're smack in the middle of downtown or enjoying the outskirts, we're ready to make your space the comfiest spot in town. Check our service area below to see if we can bring our expertise to your doorstep.</p>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1U4yoipYhhpjz1CH8BalCHwL0tjS5Urs&ehbc=2E312F&noprof=1" width="100%" height="480"></iframe>
+  
+<div style="background-color:#000000;color:white;">
+  <h3 class="w3-center" >Reviews</h3>
+  <p class="w3-center w3-large">🛠️🚧Under Construction...🚧🦺</p>
+</div>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">About Us (Owners need to add short bio here)</h3>
+  <img style="width:50%;margin-top:48px;float:right;padding:10px;" src="images/owners.png" class="w3-image">
+  <p class="w3-large" float="left">Our mission is to provide reliable heating and cooling solutions with a customer-centric approach. 
+  We're commited to providing systems that not only stand the test of time but also adhere to California's evolving HVAC regulations. 
+  Our goal is to be a trusted partner in crafting spaces that prioritize comfort, efficiency, and overall well-being.</p>
+  
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-balance-scale fa-4x" aria-hidden="true"></i>
+      <p class="w3-large">Integrity</p>
+      <p>Upholding the highest standards of honesty and transparency in all our interactions, ensuring trust and confidence with our clients.</p>
+    </div>
+	
+    <div class="w3-quarter">
+      <i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i>
+      <p class="w3-large">Innovation</p>
+      <p>Embracing and integrating the lastest advancements in HVAC technology to deliveer state-of-the-article solutions that set industry benchmarks.</p>
+    </div>
+	
+    <div class="w3-quarter">
+      <i class="fa fa-users fa-4x" aria-hidden="true"></i>
+      <p class="w3-large">Customer-Centric Approach</p>
+      <p>Placing our clients at the forefront, we tailor our services to meet your unique needs. We strive to make your experience as hassle-free as possible. </p>
+    </div>
+	
+    <div class="w3-quarter">
+      <i class="fa fa-globe fa-4x" aria-hidden="true"></i>
+      <p class="w3-large">Sustainability</p>
+      <p>Committed to minimizing our environmental impact, we actively seek eco-friendly practices and solutions in our HVAC services to contribute to a greener future.</p>
+    </div>
+	
+	<div class="w3-quarter" >
+      <i class="fa fa-thumbs-o-up fa-4x" aria-hidden="true"></i>
+      <p class="w3-large">Professionalism</p>
+      <p>Conducting ourselves with the utmost professionalism, from communication to execution, maintaining a commitment to excellence in every aspect of our business.</p>
+    </div>
+	
+	<div class="w3-quarter">
+      <i class="fa fa-heart fa-4x" aria-hidden="true"></i>
+      <p class="w3-large">Safety</p>
+      <p>Prioritizing the safety of our clients, employees, and the communities we serve, adhering to the highest standards of safety practices in all our operations.</p>
+    </div>
+	
+	<div class="w3-quarter">
+      <i class="fa fa-handshake-o fa-4x" aria-hidden="true"></i>
+      <p class="w3-large">Reliability</p>
+      <p>Ensuring the dependability and longevity of our HVAC systems, we stand behind the quality of our workmanship, providing a peace of mind to our clients.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div style="padding:128px 16px; background-color:#000000;color:white;">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our team of professionals hold the following certifications:</h3>
+	  <h4> EPA 608 </h4>
+	  <img style="vertical-align:center; padding-left: 5px;" src="images/epa.png" width="30%" height="30%" float="right">
+      <p float="left">This certification is required for all HVAC technicians who maintain, service, repair, or dispose of equipment that could release refrigerant into the atmosphere.</p>
+	  <h4> CA C-20 License</h4>
+	  <img style="vertical-align:center; padding-left: 5px;" src="images/cslb.png" width="50%" height="50%" float="right">
+	  <p>This certification is requried for all HVAC contractors. It authorizes contractors to install, repair, and service HVAC systems in both residential and commercial buildings.</p>
+      <!--<p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>-->
+    </div>	
+  </div>
+</div>
+
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Services</h3>
+  <p class="w3-center w3-large">Ready for a breath of fresh, perfectly conditioned air? At 2020 Heating & Air, our suite of HVAC services is designed to make your space the epitome of comfort. From flawless installations to seamless maintenance, we're your partners in creating a consistently pleasant indoor environment. Explore our services and let's tailor a solution just for you!</p>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+	  <h4>Installations and Upgrades</h4>
+      <p>From installing the latest HVAC systems to upgrading to energy-efficient components, we ensure your HVAC setup aligns with the latest industry standards. Our expertise extends to integration of smart thermostats and zoning systems. Our experienced technicians handle everything from installing furnaces, A/C systems, mini-splits, heat pumps, and package units.See our Products page for an overview of all the systems and upgrades we work with.</p>
+	  <div class="w3-col m6">
+		<img class="w3-image w3-round-large" src="images/installation.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> Repairs</h4>
+	  <p>In times of urgency, our skilled technicians excel in reliably diagnosing and repairing your existing system. Whether it's a sudden breakdown or gradual decline in efficiency, our repair services are prompt, precise, and aimed for getting your system back on track. See our products page for an overview of all the systems we work with.</p>
+      <div class="w3-col m6">
+		<img class="w3-image w3-round-large" src="images/repairs.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> Troubleshooting, Maintenance, and Tune-Ups</h4>
+	  <p>Not sure what you are looking for? Our consultation services are designed to evaluate the efficiency and sustainability of your existing HVAC systems. We provide assessments and offer our experienced recommendations for improvements or upgrades to optimize your overall comfort and energy efficiency. Our comprehensive maintenance services guarantee the ongoing reliability of your HVAC systems, complemented by periodic tune-ups for long-lasting energy efficiency. With our strong attention to detail, we focus on proactive measures to prevent issues, ensuring your system operates at peak performance.</p>
+	  <div class="w3-col m6">
+		<img class="w3-image w3-round-large" src="images/troubleshooting.jpeg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> Duct Cleaning and Replacement</h4>
+	  <p>Improve indoor air quality with our specialized duct cleaning services, removing dust, debris, and contaminants from your system. If your ducts are deteriorated or worn out, our duct replacement services(when necessary) will bring new life to your system and ensure a fresh, comfortable atmosphere in your home. </p>
+	  <div class="w3-col m6">
+		<img class="w3-image w3-round-large" src="images/tempDuct.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> Commercial HVAC Solutions</h4>
+	  <p>Our experience extends beyond residential installations, repairs, and services. Tailored to meet the unique needs of commercial properties, our services encompass specialized installations and maintenance for commercial buildings. We ensure optimal functionality and climate control for larger-scale HVAC systems. </p>
+	  <div class="w3-col m6">
+		<img class="w3-image w3-round-large" src="images/tempCommercial.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> HERS Testing</h4>
+	  <p>We offer Home Energy Rating System (HERS) testing to assess the energy efficiency of your HVAC system and overall home performance. Our certified technicians conduct thorough evaluations, providing insights into your home's energy usage and recommending enhancements to increase efficiency and reduce environmental impact. </p>
+	  <div class="w3-col m6">
+		<img class="w3-image w3-round-large" src="images/tempHERS.jpeg" alt="Add pictures" width="700" height="394">
+	  </div>
+	</div>
+  </div>
+  
+</div>
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center" style="padding:128px 16px; background-color:#000000;color:white;" id="pricing">
+  <h3>Products</h3>
+  <p class="w3-large">Step into the future of comfort with 2020 Heating & Air's stellar lineup of HVAC solutions designed to optimize your comfort while minimizing environmental impact. Our energy-efficient systems go beyond climate control; they're about creating your ideal home. Dive into our product collection and find the perfect match that elevates your space to new levels of comfort!<br>  	<b>Prices not listed because they are subject to change based on model, type and availability.</p>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+	  <h4>Heating Systems:</h4>
+	  <h5> Central Air Furnaces</h5>
+      <p>Central air furnaces are designed to heat your entire home by distributing warm air through air ducts. They are usually installed in utility closets, basements or attics as they require adequate space for installation/ maintenance and proper ventilation. The most common furnaces we install are powered by natural gas* or electricity.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/centralFurnace.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  <h5>Wall Furnaces</h5>
+	  <p>Wall furnaces (also known as wall heaters) are compact units designed to heat specific rooms/areas in your home. They are installed directly on a wall and require some space to allow for proper ventilation. We commonly install wall furnaces powered by natural gas* or electricity. We offer both single-sided units (heats one room/area) or double-sided units (heats two adjacent rooms/areas).</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/wallFurnace.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> Cooling Systems:</h4>
+	  <h5> Central Air Conditioners</h5>
+	  <p>Central air conditioners are designed to cool your entire home by distributing cold air through air ducts. These systems have an inside unit (installed alongside your furnace) and outside unit. The inside unit pulls warm air from your home while the outside unit uses refrigerant to pump cool air back into your home. The most common central air conditioners we install are powered by electricity.</p>
+      <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/centralAC.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  <h5>Through-the-Wall Air Conditioners</h5>
+	  <p>Through-the-wall air conditioners are compact units designed to cool specific rooms/areas in your home. Like their name implies, these units are installed inside your home through to an exterior wall. These systems are comprised of an indoor evaporator unit and an outdoor condenser unit with a wall sleeve in between to insulate your home. These systems are powered by electricity and function more efficiently than window-mounted A/C's.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/wallAC.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> Combined Heating and Cooling Systems:</h4>
+	  <h5>Heat Pumps</h5>
+	  <p>Heat pumps are one of the most versitile and energy-efficient systems we offer. Heat pumps heat or cool your home by transferring heat between indoor and outdoor units so they work best in moderate climates like the bay area. Heat pumps can function with or without ducting and will never take up much (if any) space indoors. They can be installed along-side your existing system to maximize energy-efficiency without sacrificing comfort. The models we offer are powered by electricity</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/heatpump.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  <h5>Mini-Splits</h5>
+	  <p>Mini-Split systems are the most popular systems on the market for residential and commercial properties. With both heating and cooling capacities, mini-splits are perfect for spaces where individualized climate control is desired. Mini-splits can be installed to heat single rooms/areas (single-zone systems) or heat multiple rooms/areas (multi-zone systems) where the temperature of each room is controlled independently. This system is comprised of a condenser (outdoor unit) and one indoor unit (or multiple units if installing a multi-zone system). Mini splits are usually installed without ducts but can function just as well with ductwork. The mini-splits we offer are powered by electricity and run on refrigerant so they will require occasional maintenance by a certified technician.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/minisplit.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  <h5>Package Units</h5>
+	  <p>Package units, like the name implies, are self-contained heating and cooling systems that combine multiple components in a single unit. Unlike mini-splits, package units rely entirely on ductwork to distribute warm/cold air into your home. These systems do not offer individualized climate control and are more commonly installed in commercial properties or large buildings. Package units are usually installed on the roof of your building or on platforms outside to allow for proper condensate drainage and will require a more thorough maintenance than other systems. These systems can be powered by natural gas* or electricity.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/packageunit.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> Ventilation:</h4>
+	  <h5>Air Ducts</h5>
+	  <p>Ductwork serves as the transportation network for air from your HVAC system. Proper installation is important to prevent air leaks, reduced system efficiency, and uneven temperature distribution. Each ductwork system is comprised of two types of ducting is supply ducts, which deliver conditioned air from your system, and return ducts, which bring air back to your HVAC unit. Depending on your system and building layout, we offer three different types of ducting: flexible ducting, metal ducting, and aluminum ducting</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/airducts.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  <h5>Ductwork Accessories</h5>
+	  <p>Some accessories we offer to personalize your ductwork's air distribution are: dampers, registers, grilles, diffusers, sealing materials, flex duct connectors, and collars</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/ductworkAccessories.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> Thermostats:</h4>
+	  <h5>Programmable Thermostats</h5>
+	  <p>The most basic and inexpensive of the thermostats we offer is the programmable thermostat. This type of thermostat will take care of all your basic needs but does not offer remote access or learning capabilities. You will be able to customize your home's temperature to your comfort as you desire.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/programmablethermostat.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  <h5>Smart Thermostats</h5>
+	  <p>Smart thermostats are more expensive than programmable thermostats but have additional control over your home's environment. By connecting your smart thermostat to your wi-fi, you will be able to adjust your home's temperature while you are away from home. Some models can integrate with other smart home devices for a comprehensive home automation experience.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/smartthermostat.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  <h5>Zoning Control Systems</h5>
+	  <p>Zoning control systems divide your home/building into seperate zones, each with its own thermostat and independent temperature control. This allows for different areas of your home/building to be heated or cooled based on specific needs. Zoning control systems can be integrated with programmable/smart thermostats as desired.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/zonecontrol.jpg" alt="Add pictures" width="700" height="394">
+      </div>
+	  
+	  <h4> Maintenance Products:</h4>
+	  <h5>Filters</h5>
+	  <p>Filters play a crucial role in maintaining the efficiency of your HVAC system. They trap airborne particles (duct, pollen, mold spores, pet hair, etc) and prevent it from being recirculated throughout your home. They keep your system clean of contaminents, and extend your system's lifespan. Filters should changed once every three months (or more often if you have pets) to keep your system running smoothly. </p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/filters.jpg" alt="Add pictures" width="700" height="394">
+	  </div>
+	  <h5>System Cleaning Solutions</h5>
+	  <p>We use a variety of cleaning solutions when we service your systems. Depending on the system, we will use cleaning solutions to clean your system's evaporator coil, condenser coil, air ducts, air filters, drain line, condensate pan, blower fan, humidifier pad, and other components. Using harsh or inappropriate chemicals can damage your system or compromise your system's performance.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/cleaner.jpg" alt="Add pictures" width="700" height="394">
+	  </div>
+	  <h5>Refrigerant</h5>
+	  <p>Because most refrigerant has a negative effect on the environment, only technicians with an EPA 608 Type II license should handle this substance. Most HVAC systems use refrigerant of some kind to cool and absorb heat efficiently.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/refrigerant.jpg" alt="Add pictures" width="700" height="394">
+	  </div>
+	  <h5>Repair Accessories</h5>
+	  <p>Each system is different and requires different parts to function, here are some of the most commonly replaced components we deal with: capacitor, flame sensor, control board, sling switch, inducer motor, gas pump, temperature sensor, switch pressure, and fans.</p>
+	  <div class="w3-col m6">
+		<img style="padding-bottom:30px;" class="w3-image w3-round-large" src="images/repairMaterials.png" alt="Add pictures" width="700" height="394">
+	  </div>
+	</div>
+  </div>
+  
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container" style="padding:128px 16px; background-color: #1e8f5b; color: white;" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Address: 1035 E. Taylor Street, San Jose, CA 95112</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (408) 661-9138</p>
+	<p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (408) 417-6546</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: 2020heating.air.inc@gmail.com</p>
+    <br>
+<!--    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Phone Number or Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>-->
+    <!-- Image of logo -->
+    <img src="images/sunnylogo.png" class="w3-image" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	<a href="https://www.homeadvisor.com/rated.2020HeatingAirInc.43144113.html"><i class="fa fa-angellist" aria-hidden="true"></i></a>
+	<a href="https://www.yelp.com/biz/2020-heating-and-air-san-jose"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+
+</script>
+
+</body>
+</html>
