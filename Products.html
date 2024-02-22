@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2020 Heating & Air, Inc.</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+  </head>
+
+
+
+
+
+  <body>
+
+<!--navigation bar + phone button + email button-->
+	<header>
+		<div id="logo">
+			<img src="images/sunnylogo.PNG" alt="2020 Heating & Air, Inc." />
+		</div>
+
+		<nav>
+			<ul>
+				<a href="tel:+4806619138"><button class="button">Call</button></a>
+				<a href="mailto:2020heating.air.inc@gmail.com"><button class="button">Email</button></a>
+				
+				<li><a href="index.html">Home</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="Services.html">Services</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+    </header>
+
+
+   
+   
+    <main>
+      <section>
+	  <div class="products">
+        <h2>Products</h2>
+
+        <p>
+          Step into the future of comfort with 2020 Heating & Air's stellar lineup of HVAC solutions 
+		  designed to optimize your comfort while minimizing environmental impact. Our energy-efficient
+		  systems go beyond climate control; they're about creating your ideal home. Dive into our 
+		  product collection and find the perfect match that elevates your space to new levels of comfort!
+        </p>
+		<p>
+		<br />Prices not listed because they are subject to change based on model, type and availability.
+		</p>
+		<p> PAGE UNDER CONSTRUCTION</p>
+		
+		
+		
+		
+		<h3>Heating Systems</h3>
+		<div class="centralHeating">
+			<h4>Central Air Furnace</h4>
+			<p>
+				We offer a variety of Carrier Comfort Series gas furnaces, including:
+			</p>
+			<select id="select" onchange="showPara(this.value)">
+			<option value= "80AFUE">Carrier Comfort Multipoise Furnace, 80% AFUE, 18 Speed ECM, Single Stage, Low Nox, 115/1 (BAAQMD Approved)</option>
+			<option value="90AFUEFix">Carrier Comfort Multipoise Furnace, 90% AFUE, Single-Stage, Fixed Speed, Ultra Low Nox (SCAQMD/SJVAPCD Compliant), 115/1</option>
+			<option value="90AFUE18">Carrier Comfort Multipoise Furnace, 90% AFUE, Single-Stage, 18 Speed ECM, Ultra Low Nox (SCAQMD/SJVAPCD Compliant), 115/1</option>
+			<option value="92AFUE">Comfort 92% AFUE Condensing Gas Furnace, Single Stage, 18 Speed ECM (BAAQMD Approved)</option>
+			<option value="95AFUE">Carrier Comfort Multipoise Furnace, 95% AFUE, Single Stage, 18 Speed ECM, 115/1 (BAAQMD Approved)</option>
+			</select>
+			
+			<p id="80AFUE" class="pClass hidePara">Single Stage gas valve <br/>Multi 18-Speed, constant torque ECM blower motor<br/>QuieTech noise reduction system<br/>Microprocessor based control center<br/>Adjustable heating air temperature rise<br/>Adjustable cooling airflow<br/>Enhanced diagnostics with easy to read 3 digit display for faults and status<br/>Stores fault codes during power outages<br/>Power Heat Igniter<br/>Draft safeguard switch designed to ensure proper furnace venting<br/>Inner door for tighter sealing</p>
+			<p id="90AFUEFix" class="pClass hidePara">Ultra Low NOx<br/>Fixed-speeds, constant torque ECM blower motor<br/>Single-Stage gas vale with pre-mix burner<br/>pilot free, hot surface ignition<br/>variable-speed inducer motor<br/>high temp limit control<br/>Adjustable blower speed<br/>Stainless-stell primary heat exchanger<br/>stainless-steel condensing secondar heat exchanger<br/>Cabinet air leakage less than 2.0% at 1.0 in. W.C</p>
+			<p id="90AFUE18" class="pClass hidePara"></p>
+			<p id="92AFUE" class="pClass hidePara"></p>
+			<p id="95AFUE" class="pClass hidePara"></p>
+			
+			<img id="furnace" src="images/centralFurnace.jpg">
+		</div>
+		
+		<h4>Wall Furnace</h4>
+		<p>
+		Wall furnaces (also known as wall heaters) are compact units designed to heat specific rooms/areas
+		in your home. They are installed directly on a wall and require some space to allow for proper 
+		ventilation. We commonly install wall furnaces powered by natural gas* or electricity. We offer both 
+		single-sided units (heats one room/area) or double-sided units (heats two adjacent rooms/areas).
+		</p>
+		
+		
+		
+		
+		<h3>Cooling Systems</h3>
+		
+		<h4>Central Air Conditioners</h4>
+		<p>
+		Central air conditioners are designed to cool your entire home by distributing cold air through air ducts.
+		These systems have an inside unit (installed alongside your furnace) and outside unit. The inside 
+		unit pulls warm air from your home while the outside unit uses refrigerant to pump cool air back into your
+		home. The most common central air conditioners we install are powered by electricity.
+		</p>
+		
+		<h4>Through-the-wall Air Conditioners</h4>
+		<p>
+		Through-the-wall air conditioners are compact units designed to cool specific rooms/areas in your home.
+		Like their name implies, these units are installed inside your home through to an exterior wall. These 
+		systems are comprised of an indoor evaporator unit and an outdoor condenser unit with a wall sleeve in 
+		between to insulate your home. These systems are powered by electricity and function more efficiently 
+		than window-mounted A/C's.
+		</p>
+		
+		
+		
+		
+		
+		<h3>Combined Heating and Cooling Systems</h3>
+		
+		<h4>Heat Pumps</h4>
+		<p>
+		Heat pumps are one of the most versitile and energy-efficient systems we offer. Heat pumps heat or cool
+		your home by transferring heat between indoor and outdoor units so they work best in moderate climates
+		like the bay area. Heat pumps can function with or without ducting and will never take up much (if any) space 
+		indoors. They can be installed along-side your existing system to maximize energy-efficiency without 
+		sacrificing comfort. The models we offer are powered by electricity.
+		</p>
+		
+		<h4>Mini-Splits</h4>
+		<p>
+		Mini-Split systems are the most popular systems on the market for residential and commercial properties. 
+		With both heating and cooling capacities, mini-splits are perfect for spaces where individualized climate
+		control is desired. Mini-splits can be installed to heat single rooms/areas (single-zone systems) or heat
+		multiple rooms/areas (multi-zone systems) where the temperature of each room is controlled independently. 
+		This system is comprised of a condenser (outdoor unit) and one indoor unit (or multiple units if installing
+		a multi-zone system). Mini splits are usually installed without ducts but can function just as well 
+		with ductwork. The mini-splits we offer are powered by electricity and run on refrigerant so they will
+		require occasional maintenance by a certified technician.
+0		</p>
+		
+		<h4>Package Units</h4>
+		<p>
+		Package units, like the name implies, are self-contained heating and cooling systems that combine multiple
+		components in a single unit. Unlike mini-splits, package units rely entirely on ductwork to distribute
+		warm/cold air into your home. These systems do not offer individualized climate control and are more commonly
+		installed in commercial properties or large buildings. Package units are usually installed on the roof of your building or on platforms
+		outside to allow for proper condensate drainage and will require a more thorough maintenance than other
+		systems. These systems can be powered by natural gas* or electricity.
+		add description here
+		</p>
+		
+		
+		
+		
+		
+		<h3>Ventilation</h3>
+		
+		<h4>Air Ducts</h4>
+		<p>
+		Ductwork serves as the transportation network for air from your HVAC system. Proper installation
+		is important to prevent air leaks, reduced system efficiency, and uneven temperature distribution. 
+		Each ductwork system is comprised of two types of ducting is supply ducts, which deliver 
+		conditioned air from your system, and return ducts, which bring air back to your HVAC unit. 
+		Depending on your system and building layout, we offer three different types of ducting: 
+		flexible ducting, metal ducting, and aluminum ducting.
+		</p>
+		
+		<h4>Ductwork Accessories</h4>
+		
+		<p>
+		Some accessories we offer to personalize your ductwork's air distribution are:
+		dampers, registers, grilles, diffusers, sealing materials, flex duct connectors, and collars.
+		</p>
+		
+		
+		
+		
+		
+		<h3>Thermostats</h3>
+		
+		<h4>Programmable Thermostats</h4>
+		<p>
+		The most basic and inexpensive of the thermostats we offer is the programmable thermostat. This type
+		of thermostat will take care of all your basic needs but does not offer remote access or learning capabilities.
+		You will be able to customize your home's temperature to your comfort as you desire.
+		</p>
+		
+		<h4>Smart Thermostats</h4>
+		<p>
+		Smart thermostats are more expensive than programmable thermostats but have additional control over your
+		home's environment. By connecting your smart thermostat to your wi-fi, you will be able to adjust your home's
+		temperature while you are away from home. Some models can integrate with other smart home devices for a comprehensive
+		home automation experience.
+		</p>
+		
+		<h4>Zoning Control Systems</h4>
+		<p>
+		Zoning control systems divide your home/building into seperate zones, each with its own thermostat and 
+		independent temperature control. This allows for different areas of your home/building to be heated or
+		cooled based on specific needs. Zoning control systems can be integrated with programmable/smart thermostats
+		as desired.
+		</p>
+		
+		
+		
+		<h3>Maintenance Products</h3>
+		
+		<h4>Filters</h4>
+		<p>
+		Filters play a crucial role in maintaining the efficiency of your HVAC system. They trap airborne
+		particles (duct, pollen, mold spores, pet hair, etc) and prevent it from being recirculated throughout 
+		your home. They keep your system clean of contaminents, and extend your system's lifespan. Filters should
+		changed once every three months (or more often if you have pets) to keep your system running smoothly.
+		</p>
+		
+		<h4>System Cleaning Solutions</h4>
+		<p>
+		We use a variety of cleaning solutions when we service your systems. Depending on the system, we will
+		use cleaning solutions to clean your system's evaporator coil, condenser coil, air ducts, air filters,
+		drain line, condensate pan, blower fan, humidifier pad, and other components. Using harsh or inappropriate
+		chemicals can damage your system or compromise your system's performance. 
+		</p>
+		
+		<h4>Refrigerant</h4>
+		<p>
+		Because most refrigerant has a negative effect on the environment, only technicians with an EPA 608 
+		Type II license should handle this substance.  Most HVAC systems use refrigerant of some kind to
+		cool and absorb heat efficiently.
+		</p>
+		
+		<h4>Repair Accessories</h4>
+		<p>
+		Each system is different and requires different parts to function, here are some of the most
+		commonly replaced components we deal with:
+		capacitor, flame sensor, control board, sling switch, inducer motor, gas pump, temperature sensor, 
+		switch pressure, and fans.
+		
+		
+		<!--side note about natural gas appliance bans!-->
+		<p>*As California moves to ban natural gas appliances, maintenance/repairs/installation of gas-reliant
+		systems may not be possible.</p>
+		
+	  </div>
+      </section>
+    </main>
+
+
+    <!-- contact info + social media -->
+
+	<footer>
+		<div class="leftFooter">
+			<h2>Contact Info</h2>
+			<p><a href="https://www.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=1092631"><i class="fa fa-address-card"></i>License (C-20): 1092631</a></p>
+			<p><i class="fa fa-map-marker"></i>Address: 1035 E. Taylor Street, San Jose, CA 95112</p>
+			<p><a href="tel:+4806619138"><i class="fa fa-phone"></i>Phone: (408) 661-9138</a></p>
+			<p><a href="tel:+4084176546"><i class="fa fa-phone"></i>Phone: (408) 417-6546</a></p>
+			<p><a href="mailto:2020heating.air.inc@gmail.com"><i class="fa fa-envelope"></i>Email: 2020heating.air.inc@gmail.com</a><p>
+			<a href="https://www.facebook.com/2020hvac" class="fa fa-facebook"></a>
+			<a href="https://www.yelp.com/biz/2020-heating-and-air-san-jose" class="fa fa-yelp"></a>
+			<p>© Copyright 2024 2020 Heating & Air, Inc.</p>
+			<p>All rights reserved.</p>
+		</div>
+		
+		<div class="rightFooter">
+			<h2>Contact Us: </h2>
+			<div class="container">
+				<label for="fname">Name:</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name...">
+				
+				<label for="contact">Phone Number:</label>
+				<input type="text" id="contact" name="contactInfo" placeholder="Phone Number.." required>
+				
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Description of work to be done.." style="height:200px"></textarea>
+				
+				<input type="submit" value="Submit">
+			</div>
+		</div>
+	</footer>
+	
+	
+	
+	<script>
+		function showPara(val) {
+			if (val != undefined && val != "") {
+				document.querySelectorAll(".pClass").forEach(function(item) {
+					item.classLIst.add("hidePara");
+					document.getElementById(val).classList.remove('hidePara')
+				})
+			}
+		}
+	</script>
+	
+  </body>
+</html>
