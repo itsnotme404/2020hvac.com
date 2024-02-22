@@ -584,8 +584,12 @@ input[type=text], select, textarea {
 .centralHeating p{
 	margin-left:20px;
 	width: 45%;
-	float: left;
-	
+	float: left;	
+}
+#select{
+	width: 65%;
+	margin-bottom: 10px;
+	display: inline;
 }
 
 #furnace {
@@ -593,6 +597,18 @@ input[type=text], select, textarea {
 	float: right;
 	margin-bottom: 10px;
 	display: inline;
+}
+
+.centralHeating 
+	padding: 10px 0px 10px 0px;
+	margin-bottom: 10px;
+	overflow: hidden;	
+}
+
+.centralCooling p{
+	margin-left:20px;
+	width: 45%;
+	float: left;	
 }
 
 #gallery {
