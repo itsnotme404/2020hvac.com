@@ -227,8 +227,20 @@ input[type=text], select, textarea {
 }
 
 .intro h2 {
-	text-align: center;
-	background-color: #1e8f5b;
+	color: #000000;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+#carrierLogo {
+	max-width: auto;
+	height: 10vh;
+	position: sticky;
+	max-width: 200px;
+	max-height: 200px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-left: 20px;
 }
 
 .intro p {
@@ -601,7 +613,7 @@ input[type=text], select, textarea {
 
 .centralHeating 
 	padding: 10px 0px 10px 0px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	overflow: hidden;	
 }
 
